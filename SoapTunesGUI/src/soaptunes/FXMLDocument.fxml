@@ -7,14 +7,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="soaptunes.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soaptunes.FXMLDocumentController">
    <children>
-      <Button fx:id="button11" layoutX="600.0" layoutY="395.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
+      <Text layoutX="175.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="~~ Soap Tunes ~~" textAlignment="CENTER" wrappingWidth="551.0">
          <font>
-            <Font name="Candara" size="23.0" />
+            <Font name="Candara Bold" size="64.0" />
          </font>
-      </Button>
-      <Button fx:id="button1" layoutX="600.0" layoutY="335.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
+      </Text>
+      <Button fx:id="button" layoutX="600.0" layoutY="215.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Silence" textAlignment="CENTER">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
@@ -24,17 +24,17 @@
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="button" layoutX="600.0" layoutY="215.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Silence" textAlignment="CENTER">
+      <Button fx:id="button1" layoutX="600.0" layoutY="335.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <TextField alignment="TOP_LEFT" layoutX="550.0" layoutY="155.0" prefHeight="46.0" prefWidth="200.0" text="Sounds:       ">
+      <Button fx:id="button11" layoutX="600.0" layoutY="395.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
          <font>
-            <Font name="Candara Bold" size="24.0" />
+            <Font name="Candara" size="23.0" />
          </font>
-      </TextField>
-      <TextArea layoutX="550.0" layoutY="516.0" prefHeight="150.0" prefWidth="320.0" text="  1. Choose a sound&#10;  2. Use the dispenser&#10;  3. Listen!">
+      </Button>
+      <TextArea layoutX="550.0" layoutY="510.0" prefHeight="106.0" prefWidth="320.0" text="  1. Choose a sound&#10;  2. Use the dispenser&#10;  3. Listen!">
          <font>
             <Font name="Candara" size="20.0" />
          </font>
@@ -44,10 +44,10 @@
             <Font name="Candara Bold" size="24.0" />
          </font>
       </TextField>
-      <TextField alignment="CENTER" layoutX="265.0" layoutY="24.0" prefHeight="66.0" prefWidth="391.0" text="Soap Tunes">
+      <Text layoutX="565.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Sounds: --------------" textAlignment="CENTER" wrappingWidth="260.0">
          <font>
-            <Font name="Candara Bold" size="40.0" />
+            <Font name="Candara Bold" size="30.0" />
          </font>
-      </TextField>
+      </Text>
    </children>
 </AnchorPane>
