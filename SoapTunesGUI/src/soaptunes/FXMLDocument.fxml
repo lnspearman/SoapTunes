@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="soaptunes.FXMLDocumentController">
+   <children>
+      <Button fx:id="button11" layoutX="600.0" layoutY="395.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" layoutX="600.0" layoutY="335.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="600.0" layoutY="275.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Jazz" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="button" layoutX="600.0" layoutY="215.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Silence" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <TextField alignment="TOP_LEFT" layoutX="550.0" layoutY="155.0" prefHeight="46.0" prefWidth="200.0" text="Sounds:       ">
+         <font>
+            <Font name="Candara Bold" size="24.0" />
+         </font>
+      </TextField>
+      <TextArea layoutX="550.0" layoutY="516.0" prefHeight="150.0" prefWidth="320.0" text="  1. Choose a sound&#10;  2. Use the dispenser&#10;  3. Listen!">
+         <font>
+            <Font name="Candara" size="20.0" />
+         </font>
+      </TextArea>
+      <TextField alignment="TOP_LEFT" layoutX="550.0" layoutY="470.0" prefHeight="40.0" prefWidth="320.0" text="Directions:">
+         <font>
+            <Font name="Candara Bold" size="24.0" />
+         </font>
+      </TextField>
+      <TextField alignment="CENTER" layoutX="265.0" layoutY="24.0" prefHeight="66.0" prefWidth="391.0" text="Soap Tunes">
+         <font>
+            <Font name="Candara Bold" size="40.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
