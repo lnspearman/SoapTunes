@@ -1,14 +1,18 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
  */
 package soaptunes;
+
+import java.applet.AudioClip;
 
 /**
  *
  * @author lspear5
  */
-public class Silence {
-    
+public class Silence extends MusicTune
+{
+    public Silence()
+    {
+        super(null);
+        // super(new AudioClip(CLIP FOR SILENCE))
+    }
 }

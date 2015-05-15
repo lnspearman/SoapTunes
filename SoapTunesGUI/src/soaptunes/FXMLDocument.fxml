@@ -14,39 +14,49 @@
             <Font name="Candara Bold" size="64.0" />
          </font>
       </Text>
-      <Button fx:id="button" layoutX="600.0" layoutY="215.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Silence" textAlignment="CENTER">
-         <font>
-            <Font name="Candara" size="23.0" />
-         </font>
-      </Button>
-      <Button fx:id="button2" layoutX="600.0" layoutY="275.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Jazz" textAlignment="CENTER">
-         <font>
-            <Font name="Candara" size="23.0" />
-         </font>
-      </Button>
-      <Button fx:id="button1" layoutX="600.0" layoutY="335.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
-         <font>
-            <Font name="Candara" size="23.0" />
-         </font>
-      </Button>
-      <Button fx:id="button11" layoutX="600.0" layoutY="395.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
-         <font>
-            <Font name="Candara" size="23.0" />
-         </font>
-      </Button>
-      <TextArea layoutX="550.0" layoutY="510.0" prefHeight="106.0" prefWidth="320.0" text="  1. Choose a sound&#10;  2. Use the dispenser&#10;  3. Listen!">
-         <font>
-            <Font name="Candara" size="20.0" />
-         </font>
-      </TextArea>
-      <TextField alignment="TOP_LEFT" layoutX="550.0" layoutY="470.0" prefHeight="40.0" prefWidth="320.0" text="Directions:">
-         <font>
-            <Font name="Candara Bold" size="24.0" />
-         </font>
-      </TextField>
-      <Text layoutX="565.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Sounds: --------------" textAlignment="CENTER" wrappingWidth="260.0">
+      <Text layoutX="560.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Sounds: --------------" textAlignment="CENTER" wrappingWidth="260.0">
          <font>
             <Font name="Candara Bold" size="30.0" />
+         </font>
+      </Text>
+      <Button fx:id="button" layoutX="595.0" layoutY="215.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Silence" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="595.0" layoutY="275.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Jazz" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" layoutX="595.0" layoutY="335.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Future" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="button11" layoutX="595.0" layoutY="395.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
+         <font>
+            <Font name="Candara" size="23.0" />
+         </font>
+      </Button>
+      <Text layoutX="560.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Directions: ------------" textAlignment="CENTER" wrappingWidth="260.0">
+         <font>
+            <Font name="Candara Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="590.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Choose a sound" wrappingWidth="200.0">
+         <font>
+            <Font name="Candara" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="590.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Click the dispenser" wrappingWidth="200.0">
+         <font>
+            <Font name="Candara" size="19.0" />
+         </font>
+      </Text>
+      <Text layoutX="590.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. Listen!" wrappingWidth="200.0">
+         <font>
+            <Font name="Candara" size="19.0" />
          </font>
       </Text>
    </children>

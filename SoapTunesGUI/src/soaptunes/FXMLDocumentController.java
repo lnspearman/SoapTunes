@@ -17,19 +17,45 @@ import javafx.scene.control.Label;
  * @author lspear5
  */
 public class FXMLDocumentController implements Initializable {
+  
+    private MusicTune currentSound;
+    
     
     @FXML
-    private Label label;
+    private void setSilence(ActionEvent event)
+    {
+        currentSound = new Silence();
+    }
     
+    @FXML
+    private void setJazz(ActionEvent event)
+    {
+        currentSound = new JazzTune();
+    }
+    
+    @FXML
+    private void setFuture(ActionEvent event)
+    {
+        currentSound = new FutureTune();
+    }
+    
+    
+    
+    
+    
+    
+    @FXML
+    private Label label;   
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
         label.setText("Hello World!");
     }
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }  
+    
+    
     
 }

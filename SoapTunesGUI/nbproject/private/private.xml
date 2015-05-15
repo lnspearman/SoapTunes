@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/lspear5/Documents/SoapTunes/SoapTunesGUI/src/soaptunes/FXMLDocument.fxml</file>
+            <file>file:/Users/lspear5/Documents/SoapTunes/SoapTunesGUI/src/soaptunes/JazzTune.java</file>
+            <file>file:/Users/lspear5/Documents/SoapTunes/SoapTunesGUI/src/soaptunes/FXMLDocumentController.java</file>
+            <file>file:/Users/lspear5/Documents/SoapTunes/SoapTunesGUI/src/soaptunes/FutureTune.java</file>
+            <file>file:/Users/lspear5/Documents/SoapTunes/SoapTunesGUI/src/soaptunes/Silence.java</file>
+            <file>file:/Users/lspear5/Documents/SoapTunes/SoapTunesGUI/src/soaptunes/MusicTune.java</file>
         </group>
     </open-files>
 </project-private>

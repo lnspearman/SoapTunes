@@ -8,12 +8,11 @@ import java.applet.AudioClip;
  *
  * @author lspear5
  */
-public class JazzTune extends MusicTune
+public class FutureTune extends MusicTune
 {
-    public JazzTune()
+    public FutureTune()
     {
         super(null);
-        // super(new AudioClip(CLIP FOR JAZZ))
+        // super(new AudioClip(CLIP FOR PLAYFUL))
     }
-    
 }
