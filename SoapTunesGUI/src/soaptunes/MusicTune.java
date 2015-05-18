@@ -3,6 +3,7 @@
 package soaptunes;
 
 import java.applet.AudioClip;
+import javafx.scene.media.MediaPlayer;
 
 /**
  *
@@ -10,18 +11,18 @@ import java.applet.AudioClip;
  */
 public abstract class MusicTune
 {
-    private AudioClip tune;
-    public MusicTune(AudioClip sound)
+    private MediaPlayer tune;
+    
+    public MusicTune(MediaPlayer sound)
     {
         tune = sound;
     }
     
-    public void playTune()
+    public void playTune() // clips should be short
     {
         if (tune != null)
         {
             tune.play();
         }
-            // no need to STOP because the clips SHOULD BE SHORT
     }
 }

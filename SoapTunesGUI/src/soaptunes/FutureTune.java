@@ -3,6 +3,8 @@
 package soaptunes;
 
 import java.applet.AudioClip;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
 /**
  *
@@ -12,7 +14,7 @@ public class FutureTune extends MusicTune
 {
     public FutureTune()
     {
-        super(null);
-        // super(new AudioClip(CLIP FOR PLAYFUL))
+        super(new MediaPlayer(new Media("Magic Wand Noise-SoundBible.com-375928671.mp3")));
+        
     }
 }

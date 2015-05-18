@@ -39,6 +39,11 @@ public class FXMLDocumentController implements Initializable {
         currentSound = new FutureTune();
     }
     
+    @FXML
+    private void playSound()
+    {
+        currentSound.playTune();
+    }
     
     
     

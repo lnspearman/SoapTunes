@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,37 +10,37 @@
 
 <AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soaptunes.FXMLDocumentController">
    <children>
-      <Text layoutX="175.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="~~ Soap Tunes ~~" textAlignment="CENTER" wrappingWidth="551.0">
+      <Text fill="#505f6f" layoutX="175.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="~~ Soap Tunes ~~" textAlignment="CENTER" wrappingWidth="551.0">
          <font>
             <Font name="Candara Bold" size="64.0" />
          </font>
       </Text>
-      <Text layoutX="560.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Sounds: --------------" textAlignment="CENTER" wrappingWidth="260.0">
+      <Text fill="#5d7486" layoutX="560.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Sounds: --------------" textAlignment="CENTER" wrappingWidth="260.0">
          <font>
             <Font name="Candara Bold" size="30.0" />
          </font>
       </Text>
-      <Button fx:id="button" layoutX="595.0" layoutY="215.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Silence" textAlignment="CENTER">
+      <Button fx:id="button" layoutX="600.0" layoutY="215.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="180.0" text="Silence" textAlignment="CENTER" textFill="#549480">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="button2" layoutX="595.0" layoutY="275.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Jazz" textAlignment="CENTER">
+      <Button fx:id="button2" layoutX="600.0" layoutY="275.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="180.0" text="Jazz" textAlignment="CENTER" textFill="#549480">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="button1" layoutX="595.0" layoutY="335.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Future" textAlignment="CENTER">
+      <Button fx:id="button1" layoutX="590.0" layoutY="334.0" onAction="#handleButtonAction" onMouseClicked="#setFuture" prefHeight="45.0" prefWidth="180.0" text="Future" textAlignment="CENTER" textFill="#549480">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="button11" layoutX="595.0" layoutY="395.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="200.0" text="Text Test" textAlignment="CENTER">
+      <Button fx:id="button11" layoutX="600.0" layoutY="395.0" onAction="#handleButtonAction" prefHeight="45.0" prefWidth="180.0" text="? ? ?" textAlignment="CENTER" textFill="#549480">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <Text layoutX="560.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Directions: ------------" textAlignment="CENTER" wrappingWidth="260.0">
+      <Text fill="#5d7486" layoutX="560.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Directions: ------------" textAlignment="CENTER" wrappingWidth="260.0">
          <font>
             <Font name="Candara Bold" size="28.0" />
          </font>
@@ -59,5 +60,10 @@
             <Font name="Candara" size="19.0" />
          </font>
       </Text>
+      <Button fx:id="button3" layoutX="110.0" layoutY="215.0" onAction="#handleButtonAction" onMouseClicked="#playSound" prefHeight="107.0" prefWidth="217.0" text="TestSoap" textAlignment="CENTER" textFill="#549480">
+         <font>
+            <Font name="Candara" size="31.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

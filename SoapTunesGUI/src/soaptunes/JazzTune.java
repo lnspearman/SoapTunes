@@ -10,6 +10,7 @@ import java.applet.AudioClip;
  */
 public class JazzTune extends MusicTune
 {
+    
     public JazzTune()
     {
         super(null);
