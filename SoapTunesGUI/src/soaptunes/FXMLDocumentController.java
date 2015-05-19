@@ -1,7 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/* This class handles button functionality, like a "cassette chooser"
+ * Each button stops currently-playing music if possible and 
+ * sets the currentSound to a new type of MusicTune
  */
 package soaptunes;
 
@@ -18,25 +17,13 @@ import javafx.scene.control.Label;
  */
 public class FXMLDocumentController implements Initializable {
   
-    private MusicTune currentSound;
+    private MusicTune currentSound = new Silence();
     
     
     @FXML
     private void setSilence(ActionEvent event)
     {
-        currentSound = new Silence();
-    }
-    
-    @FXML
-    private void setJazz(ActionEvent event)
-    {
-        currentSound = new JazzTune();
-    }
-    
-    @FXML
-    private void setFuture(ActionEvent event)
-    {
-        currentSound = new FutureTune();
+        currentSound.stopTune();
     }
     
     @FXML

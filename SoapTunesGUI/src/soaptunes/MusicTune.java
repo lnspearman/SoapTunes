@@ -1,28 +1,38 @@
-/*
+/* This class functions like a cassette player for the soap dispenser;
+ * Each specific MusicTune can be played (playTune()) or stopped (stopTune())
+ * 
+ *
  */
 package soaptunes;
 
 import java.applet.AudioClip;
-import javafx.scene.media.MediaPlayer;
 
 /**
  *
  * @author lspear5
  */
-public abstract class MusicTune
+public class MusicTune
 {
-    private MediaPlayer tune;
+    private AudioClip tune;
     
-    public MusicTune(MediaPlayer sound)
+    public MusicTune(AudioClip sound)
     {
         tune = sound;
     }
     
-    public void playTune() // clips should be short
+    public void playTune()
     {
         if (tune != null)
         {
             tune.play();
+        }
+    }
+    
+    public void stopTune()
+    {
+        if (tune != null) // "silence" may be a null pointer
+        {
+            tune.stop();
         }
     }
 }
