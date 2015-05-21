@@ -30,7 +30,7 @@
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="button1" layoutX="526.0" layoutY="335.0" onAction="#setFuture" prefHeight="45.0" prefWidth="190.0" text="Future" textAlignment="CENTER" textFill="#61a196">
+      <Button fx:id="button1" layoutX="535.0" layoutY="335.0" prefHeight="45.0" prefWidth="190.0" text="Future" textAlignment="CENTER" textFill="#61a196">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
