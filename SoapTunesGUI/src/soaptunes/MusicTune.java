@@ -5,6 +5,7 @@
  */
 package soaptunes;
 
+import java.util.ArrayList;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -19,7 +20,13 @@ public class MusicTune
             swotrURI = MusicTune.class.getResource("swotrWAV.wav").toString(),
             freshURI = MusicTune.class.getResource("freshWAV.wav").toString(),
             misc1URI = MusicTune.class.getResource("Music_Box-Big_Daddy-1389738694.mp3").toString(),
-            misc2URI = MusicTune.class.getResource("Magic Wand Noise-SoundBible.com-375928671.mp3").toString();
+            misc2URI = MusicTune.class.getResource("Magic Wand Noise-SoundBible.com-375928671.mp3").toString(),
+            misc3URI = MusicTune.class.getResource("Laugh.mp3").toString(),
+            misc4URI = MusicTune.class.getResource("Sparkling.mp3").toString(),
+            misc5URI = MusicTune.class.getResource("Tinkle.mp3").toString(),
+            mewURI = MusicTune.class.getResource("Meow.mp3").toString();
+    
+    private static final String[] rng = {misc1URI, misc2URI, misc3URI, misc4URI, misc5URI, mewURI};
     
     private Media audioMedia;
     private MediaPlayer amp;
@@ -47,6 +54,17 @@ public class MusicTune
         audioMedia = new Media(freshURI);
         amp = new MediaPlayer(audioMedia);
     }
+    
+    public void newMew()
+    {
+        audioMedia = new Media(miscURI());
+        amp = new MediaPlayer(audioMedia);
+    }
+    
+        public String miscURI()
+        {
+            return (rng[(int)(Math.random() * rng.length)]);
+        }
 
     
     public void playTune()

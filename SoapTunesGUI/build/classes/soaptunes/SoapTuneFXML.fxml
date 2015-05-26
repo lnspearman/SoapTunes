@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -14,11 +15,6 @@
             <Font name="Candara Bold" size="64.0" />
          </font>
       </Text>
-      <Button fx:id="button3" layoutX="120.0" layoutY="225.0" onAction="#playSound" prefHeight="107.0" prefWidth="217.0" text="TestSoap" textAlignment="CENTER" textFill="#549480">
-         <font>
-            <Font name="Candara" size="31.0" />
-         </font>
-      </Button>
       <Text fill="#5d7486" layoutX="490.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="--- Sounds: --------------" textAlignment="CENTER" wrappingWidth="260.0">
          <font>
             <Font name="Candara Bold" size="30.0" />
@@ -39,7 +35,7 @@
             <Font name="Candara" size="23.0" />
          </font>
       </Button>
-      <Button fx:id="button11" layoutX="525.0" layoutY="405.0" prefHeight="45.0" prefWidth="190.0" text="? ? ?" textAlignment="CENTER" textFill="#61a196">
+      <Button fx:id="button11" layoutX="525.0" layoutY="405.0" onAction="#setMew" prefHeight="45.0" prefWidth="190.0" text="? ? ?" textAlignment="CENTER" textFill="#61a196">
          <font>
             <Font name="Candara" size="23.0" />
          </font>
@@ -64,5 +60,20 @@
             <Font name="Candara" size="19.0" />
          </font>
       </Text>
+      <ImageView fitHeight="467.0" fitWidth="436.0" layoutX="54.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imagething" fitHeight="467.0" fitWidth="363.0" layoutX="54.0" layoutY="134.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@IMG2.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="button3" layoutX="151.0" layoutY="478.0" onAction="#playSound" opacity="0.0" prefHeight="95.0" prefWidth="179.0" text="TestSoap" textAlignment="CENTER" textFill="#549480">
+         <font>
+            <Font name="Candara" size="31.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

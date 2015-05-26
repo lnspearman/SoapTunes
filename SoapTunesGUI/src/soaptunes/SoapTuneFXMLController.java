@@ -10,6 +10,7 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.image.ImageView;
 
 /**
  * FXML Controller class
@@ -17,27 +18,35 @@ import javafx.fxml.Initializable;
  * @author lspear5
  */
 public class SoapTuneFXMLController implements Initializable {
-
+    
+    private final MusicTune sound = new MusicTune();
+    @FXML
+    private ImageView imagething;
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        imagething.setOpacity(0.0);
     }   
-   
-    private final MusicTune sound = new MusicTune();
+    
+    
     
     @FXML
     private void setSilence(ActionEvent event)
     {
+        imagething.setOpacity(0.0);
         sound.stopTune();
         sound.newSilence();
     }
     
+    
+    
     @FXML
     private void setSwotr(ActionEvent event)
     {
+        imagething.setOpacity(0.0);
         sound.stopTune();
         sound.newSwotr();
     }
@@ -45,14 +54,27 @@ public class SoapTuneFXMLController implements Initializable {
     @FXML
     private void setFresh(ActionEvent e)
     {
+        imagething.setOpacity(0.0);
         sound.stopTune();
         sound.newFresh();
+    }
+    
+    @FXML
+    private void setMew(ActionEvent event)
+    {
+        imagething.setOpacity(0.0);
+        sound.stopTune();
+        sound.newMew();
     }
     
     @FXML
     private void playSound()
     {
         sound.playTune();
+        imagething.setOpacity(1.0);
+        
     }
+    
+    
     
 }
